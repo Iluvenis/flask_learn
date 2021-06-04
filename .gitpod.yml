@@ -1,18 +1,24 @@
-
 image:
   file: .gitpod.Dockerfile
 
 ports:
-    - port: 3000
-      onOpen: open-preview
+  - port: 3000
+    onOpen: open-preview
 tasks:
-    - command: >
-        learnpack start -g incremental
+  - command: >
+      learnpack start -g incremental
 github:
-    prebuilds:
-        # enable for the master/default branch (defaults to true)
-        master: true
-        # enable for pull requests coming from this repo (defaults to true)
-        pullRequests: false
-        # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
-        addComment: false
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+# enable for pull requests coming from this repo (defaults to true)
+    pullRequests: false
+# add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
+    addComment: false
+vscode:
+  extensions:
+    - samuelcolvin.jinjahtml
+    - ms-python.python
+    - tabnine.tabnine-vscode
+    - ritwickdey.liveserver
+    - foxundermoon.shell-format
