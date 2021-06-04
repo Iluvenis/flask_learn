@@ -4,7 +4,7 @@ USER root
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y apt-utils
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y python3-dev zsh git netcat nmap vim tldr && apt-get autoremove -y && apt-get autoclean -y
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y zsh git netcat nmap vim tldr && apt-get autoremove -y && apt-get autoclean -y
 
 USER gitpod
 
